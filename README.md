@@ -1,2 +1,2 @@
 # Boundaries
-Point in polygon testing for the 50 US states
+Point in polygon testing for coordinates the 50 US states
