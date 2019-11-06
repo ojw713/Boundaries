@@ -15,6 +15,6 @@ bool result = Usa.Alaska.IsInside(point);
 **GetState**
 ```c#
 var point = new Coordinate(36.1069652D,-112.1129972D);
-string result = Usa.GetState(point);
+StateName result = Usa.GetState(point);
 ```
-Returns "None" if the point is outside of USA.
+Returns StateName.None if the point is outside of USA.
