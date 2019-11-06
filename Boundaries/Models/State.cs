@@ -1,12 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Boundaries.Models
 {
     public class State
     {
-        public string Name { get; }
+        public StateName Name { get; }
 
         public List<Coordinate> Points { get; }
+
+        public State(StateName name, List<Coordinate> points)
+        {
+            Name = name;
+            Points = points;
+        }
 
         public bool IsInside(Coordinate point)
         {
@@ -23,12 +30,6 @@ namespace Boundaries.Models
             }
 
             return isInside;
-        }
-
-        public State(string name, List<Coordinate> points)
-        {
-            Name = name;
-            Points = points;
         }
     }
 }

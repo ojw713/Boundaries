@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\StateFactory.cs" />
     <Compile Include="Models\Coordinate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\State.cs" />
+    <Compile Include="StateName.cs" />
     <Compile Include="Usa.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
